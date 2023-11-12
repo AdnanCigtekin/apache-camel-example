@@ -7,9 +7,9 @@ import org.springframework.stereotype.Component;
 public class FileMoveRouter extends RouteBuilder {
     @Override
     public void configure() throws Exception {
-        from("file://files/input")
+        from("file://files/input/basic")
                 .log("${headers}")
                 .log("${body}")
-                .to("file://files/output");
+                .to("file://files/output/basic");
     }
 }

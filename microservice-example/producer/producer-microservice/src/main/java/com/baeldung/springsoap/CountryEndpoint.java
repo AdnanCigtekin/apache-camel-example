@@ -24,10 +24,10 @@ public class CountryEndpoint {
     @PayloadRoot(namespace = NAMESPACE_URI, localPart = "getCountryRequest")
     @ResponsePayload
     public GetCountryResponse getCountry(@RequestPayload GetCountryRequest request) {
-        System.out.println("RECEIVED REQUEST");
+        System.out.println("RECEIVED REQUEST : " + request.getName());
         GetCountryResponse response = new GetCountryResponse();
         response.setCountry(countryRepository.findCountry(request.getName()));
-        System.out.println(response);
+        System.out.println(response.getCountry());
         return response;
     }
 }

@@ -5,6 +5,7 @@ import com.adnan.springsoap.gen.GetCountryResponse;
 import org.apache.camel.Exchange;
 import org.apache.camel.builder.RouteBuilder;
 import org.apache.camel.component.cxf.common.message.CxfConstants;
+import org.apache.camel.model.dataformat.JsonLibrary;
 import org.apache.camel.model.rest.RestBindingMode;
 import org.springframework.stereotype.Component;
 
@@ -17,25 +18,27 @@ public class CountryClientRoute extends RouteBuilder {
 
 
         from("direct:getCountry")
-                .setBody(constant("Spain"))
+                .log("Received request for country: ${header.country}")
+                .setBody(simple("${header.country}"))
                 .bean(GetCountryRequestBuilder.class)
                 .to("cxf:http://localhost:8081/ws?serviceClass=com.adnan.springsoap.gen.CountriesPort&defaultOperationName=getCountry")
-                .process(e -> {
-                    System.out.println((e.getIn().getBody()));
-                })
-                .log("Response: ${body[0]} ")
                 .convertBodyTo(GetCountryResponse.class)
-                .log("Response: ${body}")
-                        .end();
+                .marshal().json(JsonLibrary.Jackson);
 
         restConfiguration()
                 .component("servlet")
                 .bindingMode(RestBindingMode.auto);
 
+        restConfiguration().component("servlet")
+                .host("localhost").port(8080);
 
-        rest("/api/getCountry")
-                .post("{countryName}")
+        rest("/api/country")
+                .get("/search?country={country}")
                 .to("direct:getCountry");
+
+        /*from("direct:getCountry")
+                .log("Received request for country: ${header.countryName}")
+                .setBody(constant("Country information for ${header.countryName}"));*/
 
 
     }

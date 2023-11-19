@@ -17,6 +17,16 @@ public class CountryClientRoute extends RouteBuilder {
     public void configure() throws Exception {
 
 
+        restConfiguration()
+                .component("servlet")
+                .bindingMode(RestBindingMode.auto)
+                .host("localhost").port(8080);
+
+
+        rest("/api/country")
+                .get("/search?country={country}")
+                .to("direct:getCountry");
+
         from("direct:getCountry")
                 .log("Received request for country: ${header.country}")
                 .setBody(simple("${header.country}"))
@@ -24,21 +34,6 @@ public class CountryClientRoute extends RouteBuilder {
                 .to("cxf:http://localhost:8081/ws?serviceClass=com.adnan.springsoap.gen.CountriesPort&defaultOperationName=getCountry")
                 .convertBodyTo(GetCountryResponse.class)
                 .marshal().json(JsonLibrary.Jackson);
-
-        restConfiguration()
-                .component("servlet")
-                .bindingMode(RestBindingMode.auto);
-
-        restConfiguration().component("servlet")
-                .host("localhost").port(8080);
-
-        rest("/api/country")
-                .get("/search?country={country}")
-                .to("direct:getCountry");
-
-        /*from("direct:getCountry")
-                .log("Received request for country: ${header.countryName}")
-                .setBody(constant("Country information for ${header.countryName}"));*/
 
 
     }

@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="507f70c9-fe25-4580-add9-36d6a0abc56d" name="Changes" comment="impl: Implemented content based routing example">
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.mvn/wrapper/maven-wrapper.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.mvn/wrapper/maven-wrapper.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/input/basic/.camel/input-1.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/input/filter/demirel.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/input/filter/icardi.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/input/filter/muslera.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/input/filter/reçber.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/output/basic/input-1.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mvnw" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mvnw.cmd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/adnan/apachecamelexample/ApacheCamelExampleApplication.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/adnan/apachecamelexample/beans/Person.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/adnan/apachecamelexample/routers/FileContentBasedRouter.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/adnan/apachecamelexample/routers/FileMoveRouter.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/adnan/apachecamelexample/ApacheCamelExampleApplicationTests.java" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">
+    <option name="selectedUrlAndAccountId">
+      <UrlAndAccount>
+        <option name="accountId" value="97b26a36-59f7-4052-889c-6aa9ff660a3d" />
+        <option name="url" value="https://github.com/AdnanCigtekin/apache-camel-example.git" />
+      </UrlAndAccount>
+    </option>
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="mavenHome" value="Use Maven wrapper" />
+        <option name="useMavenConfig" value="true" />
+      </MavenGeneralSettings>
+    </option>
+    <option name="importingSettings">
+      <MavenImportingSettings>
+        <option name="workspaceImportEnabled" value="true" />
+      </MavenImportingSettings>
+    </option>
+  </component>
+  <component name="ProjectId" id="2Y4s9DmKZZUO7bv1tTFHWXLqDn1" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "last_opened_file_path": "C:/Users/adnan/Documents/projects/apache-camel-example/microservice-example/gs-soap-service",
+    "settings.editor.selected.configurable": "reference.settingsdialog.IDE.editor.colors.RegExp"
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\adnan\Documents\projects\apache-camel-example\files\input\filter" />
+      <recent name="C:\Users\adnan\Documents\projects\apache-camel-example\files\input\basic" />
+      <recent name="C:\Users\adnan\Documents\projects\apache-camel-example\files\input" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="ApacheCamelExampleApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.adnan.apachecamelexample.ApacheCamelExampleApplication" />
+      <module name="apache-camel-example" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.adnan.apachecamelexample.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.ApacheCamelExampleApplication" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="507f70c9-fe25-4580-add9-36d6a0abc56d" name="Changes" comment="" />
+      <created>1699796032886</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1699796032886</updated>
+    </task>
+    <task id="LOCAL-00001" summary="first commit">
+      <created>1699797811393</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1699797811393</updated>
+    </task>
+    <task id="LOCAL-00002" summary="initial commit">
+      <created>1699797826215</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1699797826215</updated>
+    </task>
+    <task id="LOCAL-00003" summary="impl: Implemented basic File Mover">
+      <created>1699798776776</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1699798776776</updated>
+    </task>
+    <task id="LOCAL-00004" summary="refactor: organized file structure of inputs/outputs">
+      <created>1699799021571</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1699799021571</updated>
+    </task>
+    <task id="LOCAL-00005" summary="impl: Implemented content based routing example">
+      <created>1699809223039</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1699809223039</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
+    <servers />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="first commit" />
+    <MESSAGE value="initial commit" />
+    <MESSAGE value="impl: Implemented basic File Mover" />
+    <MESSAGE value="refactor: organized file structure of inputs/outputs" />
+    <MESSAGE value="impl: Implemented content based routing example" />
+    <option name="LAST_COMMIT_MESSAGE" value="impl: Implemented content based routing example" />
+  </component>
+</project>
